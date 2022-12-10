@@ -1,0 +1,282 @@
+:root {
+  --white: #fff;
+  --black: #111;
+  --navyblue: #06020e;
+  --pink: #ee0979;
+  --yellow: #ffff00;
+  --green: #00ff00;
+  --orange: #ffa500;
+  --lawngreen: #7cfc00;
+  --red: #ff0000;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+.text-primary-color {
+  color: var(--orange);
+}
+
+.btn-gradient {
+  background: linear-gradient(
+    to left,
+    var(--orange),
+    var(--pink),
+    var(--orange)
+  );
+  color: var(--white);
+}
+
+body {
+  background: linear-gradient(to right, #1e232e, #282b33);
+}
+
+.background-image {
+  background-image: url("./../assets/images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container .row h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+.background-image .container .row p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 0.6;
+}
+
+#header-form {
+  border: 1px solid var(--black);
+  opacity: 0.9;
+  border-radius: 10px;
+  margin-top: 80px;
+  background: linear-gradient(to left, var(--orange), var(--black));
+}
+
+#form-headline {
+  line-height: 15px;
+}
+
+#name,
+#email,
+#contactNumber {
+  border: 1px solid var(--black);
+}
+
+#name:hover,
+#email:hover,
+#contactNumber:hover {
+  transform: scale(1.1);
+}
+
+#firstNameMessage,
+#emailMessage,
+#contactNumberMessage {
+  font-style: italic;
+  color: var(--red);
+}
+
+.accept {
+  border: 20px solid var(--green);
+}
+.reject {
+  border: 20px solid var(--red);
+}
+
+ .menu-bar {
+  width: 60px;
+  height: 50px;
+}
+
+ .menu-bar span {
+  height: 3px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+ .menu-bar span:nth-child(1) {
+  margin-left: 15px;
+  margin-top: 6px;
+  background-color: var(--white);
+}
+
+.menu-bar span:nth-child(2) {
+  margin-left: 1px;
+  background-color: var(--white);
+}
+
+ .menu-bar span:nth-child(3) {
+  margin-left: 10px;
+  background-color: var(--white);
+}
+
+.about-text:hover {
+  transform: scale(1, 1.4);
+}
+
+#form-heading {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 28px;
+}
+
+.about-background {
+  font-family: "Raleway", sans-serif;
+  padding: 35px 70px;
+  position: relative;
+  width: 95%;
+  margin-left: 40px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--dark);
+}
+
+.about-image:hover,
+.layout {
+  opacity: 1;
+  transform: scale(0.8);
+}
+
+.about-image:hover .overlay {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.amenities i:hover {
+  background: linear-gradient(
+    to left,
+    var(--orange),
+    var(--pink),
+    var(--orange)
+  );
+  color: var(--white);
+}
+
+.amenities i {
+  transition: 1s ease-in-out;
+}
+
+.amenities .fas:hover {
+  transform: scale(1.2);
+}
+
+.text {
+  color: var(--white);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.carousel-item {
+  min-height: 70vh;
+}
+
+#left-icon,
+#right-icon {
+  opacity: 0.6;
+}
+
+#left-icon:hover,
+#right-icon:hover {
+  opacity: 1;
+}
+
+.image-collection {
+  border: 2px solid var(--black);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  transition: 0.5s ease-in-out;
+}
+
+.layout {
+  transition: 0.5s ease-in-out;
+}
+
+.image-collection:hover,
+.layout:hover {
+  transform: scale(1.1);
+}
+
+#about-heading,
+#review-heading,
+#amenities-heading,
+#faq-heading {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.accordion {
+  background-color: transparent;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.accordion::after {
+  content: "\002B";
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.faq .active::after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.footer {
+  background-color: var(--navyblue) !important;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  .image-collection:hover {
+    transform: scale(0.9);
+  }
+
+  .amenities .fas:hover {
+    transform: scale(0.8);
+  }
+}
